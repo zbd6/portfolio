@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="body">
+
+  <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+        <div class="nav-content">
+            <a href="#" class="logo">Mon Portfolio</a>
+            <div id="menu-links" class="menu-links">
+            <a href="#a-propos" class="link">À propos</a>
+            <a href="#competences" class="link">Compétences</a>
+            <a href="#projets" class="link">Projets</a>
+            <a href="#contact" class="link">Contact</a>
+            </div>
+            <button id="menu-btn" class="menu-btn">
+            <i class="fas fa-bars icon"></i>
+            </button>
+        </div>
+        <div id="menu-mobile" class="menu-mobile">
+            <a href="#a-propos" class="link">À propos</a>
+            <a href="#competences" class="link">Compétences</a>
+            <a href="#projets" class="link">Projets</a>
+            <a href="#contact" class="link">Contact</a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <section class="accueil">
+        <div class="accueil-conteneur">
+            <div class="accueil-texte apparition">
+            <h1 class="titre">
+                Bonjour, je suis <span class="prenom">Zoubida BENHABIB</span>
+            </h1>
+            <h2 class="soustitre">Étudiante en informatique</h2>
+            <p class="description">
+                Étudiante en première année, passionnée par les algorithmes et le développement logiciel, j’aime relever des défis techniques et concevoir des solutions claires et efficaces.
+            </p>
+            <div class="boutons">
+                <a href="#projets" class="btn-principal">Voir les projets</a>
+                <a href="#contact" class="btn-secondaire">Me contacter</a>
+            </div>
+            </div>
+            <div class="accueil-image apparition retard-1">
+            <!-- <div class="photo-profil">
+                <img
+                src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Profil"
+                class="photo"
+                />
+            </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="a-propos">
+        <div class="a-propos-conteneur">
+            <h2 class="a-propos-titre apparition">À propos de moi</h2>
+            <div class="a-propos-flex">
+            <div class="a-propos-texte apparition retard-1">
+                <p class="a-propos-paragraphe">
+                Je suis étudiant en troisième année d'informatique à Tech University, passionné par l'ingénierie logicielle et l'apprentissage automatique. J’aime résoudre des problèmes complexes avec efficacité.
+                </p>
+                <p class="a-propos-paragraphe">
+                Quand je ne code pas, je contribue à des projets open source, je participe à des hackathons ou j’explore de nouvelles technologies dans le domaine dynamique de l’informatique.
+                </p>
+                <div class="liens">
+                <a href="https://github.com/zbd6" class="btn-github">
+                    <i class="fab fa-github icon-lien"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/benhabib-zoubida" class="btn-linkedin">
+                    <i class="fab fa-linkedin icon-lien"></i> LinkedIn
+                </a>
+                <a href="cv.pdf" download class="btn-github">
+                    Mon CV
+                </a>
+                </div>
+            </div>
+            <div class="a-propos-formation apparition retard-2">
+                <h3 class="formation-titre">Formation</h3>
+                <div class="formation-list">
+                <div class="formation-item">
+                    <h4 class="formation-etab">IUT de Villetaneuse Sorbonne Paris Nord</h4>
+                    <p class="formation-intitule">BUT1 Informatique</p>
+                    <p class="formation-date">2024 - Présent</p>
+                </div>
+                <div class="formation-item">
+                    <h4 class="formation-etab">Université Paris cité, Paris 13ème</h4>
+                    <p class="formation-intitule">Double licence bio-info validée</p>
+                    <p class="formation-date">2023 - 2024</p>
+                </div>
+                <div class="formation-item">
+                    <h4 class="formation-etab">Lycée Jules Uhry</h4>
+                    <p class="formation-intitule">BAC générale mention Très bien</p>
+                    <p class="formation-date">2022 - 2024</p>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="competences">
+        <div class="competences-conteneur">
+            <h2 class="competences-titre apparition">Compétences techniques</h2>
+            <div class="competences-grille">
+            <!-- Langages -->
+            <div class="carte competence apparition retard-1">
+                <div class="icone">
+                <i class="fas fa-code"></i>
+                </div>
+                <h3 class="competence-titre">Langages</h3>
+                <ul class="liste">
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Assembler</li>
+                <li>SQL</li>
+                </ul>
+            </div>
+
+            <!-- Développement Web -->
+            <div class="carte competence apparition retard-2">
+                <div class="icone">
+                <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="competence-titre">Dév. Web</h3>
+                <ul class="liste">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                </ul>
+            </div>
+
+            <!-- Science des données -->
+            <div class="carte competence apparition retard-3">
+                <div class="icone">
+                <i class="fas fa-database"></i>
+                </div>
+                <h3 class="competence-titre">Science des données</h3>
+                <ul class="liste">
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                </ul>
+            </div>
+
+            <!-- Outils -->
+            <div class="carte competence apparition retard-4">
+                <div class="icone">
+                <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="competence-titre">Outils</h3>
+                <ul class="liste">
+                <li>Git/GitHub</li>
+                <li>Docker</li>
+                <li>VS Code</li>
+                <li>Jupyter</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projets">
+        <div class="projets-conteneur">
+            <h2 class="projets-titre fade-in">Mes Projets</h2>
+            <div class="projets-grille">
+            <!-- Projet 1 -->
+            <div class="carte-projet fade-in delay-1">
+                <div class="carte-image">
+                <img src="images/e_commerce.png" alt="Projet 1" class="image">
+                </div>
+                <div class="carte-contenu">
+                <h3 class="carte-titre">Prédicteur de marché boursier</h3>
+                <p class="carte-desc">
+                    Modèle d'apprentissage automatique prédisant les prix des actions avec une précision de 85 % grâce aux réseaux LSTM.
+                </p>
+                <div class="etiquettes">
+                    <span class="etiquette">PHP</span>
+                    <span class="etiquette">HTML/CSS</span>
+                    <span class="etiquette">SQL</span>
+                </div>
+                <a href="https://github.com/zbd6/projet2024" class="carte-lien">
+                    Voir le projet <i class="fas fa-arrow-right icon"></i>
+                </a>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="carte-projet fade-in delay-2">
+                <div class="carte-image">
+                <img src="images/chaosmos.png" alt="Projet 2" class="image">
+                </div>
+                <div class="carte-contenu">
+                <h3 class="carte-titre">Plateforme e-commerce</h3>
+                <p class="carte-desc">
+                    Site e-commerce full-stack avec authentification utilisateur, catalogue produits et système de paiement.
+                </p>
+                <div class="etiquettes">
+                    <span class="etiquette">HTML</span>
+                    <span class="etiquette">CSS</span>
+                    <span class="etiquette">Javascript</span>
+                </div>
+                <a href="https://github.com/zbd6/chaosmos" class="carte-lien">
+                    Voir le projet <i class="fas fa-arrow-right icon"></i>
+                </a>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="carte-projet fade-in delay-3">
+                <div class="carte-image">
+                <img src="images/echec.png" alt="Projet 3" class="image">
+                </div>
+                <div class="carte-contenu">
+                <h3 class="carte-titre">Visualiseur d’algorithmes de parcours</h3>
+                <p class="carte-desc">
+                    Outil interactif permettant de visualiser plusieurs algorithmes de recherche de chemin, comme Dijkstra et A*.
+                </p>
+                <div class="etiquettes">
+                    <span class="etiquette">Java</span>
+                </div>
+                <a href="https://github.com/zbd6/jeu_echec" class="carte-lien">
+                    Voir le projet <i class="fas fa-arrow-right icon"></i>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="contact-conteneur">
+            <h2 class="contact-titre fade-in">Me contacter</h2>
+            <div class="contact-carte fade-in delay-1">
+            <div class="contact-flex">
+                <!-- Informations -->
+                <div class="contact-info">
+                <h3 class="contact-sous-titre">Informations de contact</h3>
+                <div class="contact-lignes">
+                    <div class="ligne">
+                    <i class="fas fa-envelope icon"></i>
+                    <span>bibzoubida6@gmail.com</span>
+                    </div>
+                    <div class="ligne">
+                    <i class="fas fa-phone icon"></i>
+                    <span>06 66 66 66 66</span>
+                    </div>
+                    <div class="ligne">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <span>Paris</span>
+                    </div>
+                </div>
+                <div class="reseaux">
+                    <h4 class="reseaux-titre">Réseaux sociaux</h4>
+                    <div class="reseaux-icones">
+                    <a href="https://github.com/zbd6" class="reseau"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/benhabib-zoubida" class="reseau"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="reseau"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="contact-formulaire">
+                <form id="contact-form">
+                    <div class="form-groupe">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" id="name" class="form-input">
+                    </div>
+                    <div class="form-groupe">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input">
+                    </div>
+                    <div class="form-groupe">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" rows="4" class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="form-bouton">Envoyer le message</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-conteneur">
+            <div class="footer-flex">
+            <div class="footer-marque">
+                <a href="#" class="footer-logo">Mon Portfolio</a>
+                <p class="footer-droits">© 2025 Tous droits réservés</p>
+            </div>
+            <div class="footer-liens">
+                <a href="#a-propos" class="footer-lien">À propos</a>
+                <a href="#competences" class="footer-lien">Compétences</a>
+                <a href="#projets" class="footer-lien">Projets</a>
+                <a href="#contact" class="footer-lien">Contact</a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
