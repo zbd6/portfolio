@@ -54,7 +54,7 @@ html {
     }
 
     .nav {
-      background-color: white;
+      background-color: #6578df;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       position: fixed;
       width: 100%;
@@ -165,7 +165,7 @@ html {
     font-size: 2.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #6473c7; 
+    color: #E4E4E4; 
   }
 
   @media (min-width: 768px) {
@@ -175,14 +175,14 @@ html {
   }
 
   .prenom {
-    color: #17215c; /* blue-600 */
+    color: #6578df; /* blue-600 */
   }
 
   .soustitre {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #6473c7;
+    color: #E4E4E4;
   }
 
   @media (min-width: 768px) {
@@ -194,7 +194,7 @@ html {
   .description {
     font-size: 1.125rem;
     margin-bottom: 2rem;
-    color: #17215c; /* gray-600 */
+    color: #6578df; /* gray-600 */
   }
 
   .boutons {
@@ -366,6 +366,7 @@ html {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    color: #E4E4E4;
   }
 
   .formation-list {
@@ -727,7 +728,7 @@ html {
 /* footer */
 
 .footer {
-    background-color: #1f2937; /* gray-800 */
+    background-color: #6578df; /* gray-800 */
     color: white;
     padding: 2rem 1.5rem;
   }
