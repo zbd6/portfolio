@@ -54,7 +54,7 @@ html {
     }
 
     .nav {
-      background-color: #6578df;
+      background-color: #131d51;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       position: fixed;
       width: 100%;
@@ -76,12 +76,13 @@ html {
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #2563eb; /* blue-600 */
+      color: white; /* blue-600 */
       text-decoration: none;
     }
 
     .menu-links {
       display: none;
+      color: white;
     }
 
     .menu-btn {
@@ -132,7 +133,7 @@ html {
     padding-bottom: 5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background: #0A0F2C; /* from-blue-50 to-indigo-50 */
+    background: #131d51; /* from-blue-50 to-indigo-50 */
   }
 
   .accueil-conteneur {
@@ -194,7 +195,8 @@ html {
   .description {
     font-size: 1.125rem;
     margin-bottom: 2rem;
-    color: #6578df; /* gray-600 */
+    color: #798ae7; /* gray-600 */
+    font-weight: bolder;
   }
 
   .boutons {
@@ -203,7 +205,7 @@ html {
   }
 
   .btn-principal {
-    background-color: #2563eb;
+    background-color: #6578df;
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -212,12 +214,13 @@ html {
   }
 
   .btn-principal:hover {
-    background-color: #1d4ed8; /* blue-700 */
+    background-color: #eff6ff; /* blue-700 */
+    color: #6578df;
   }
 
   .btn-secondaire {
-    border: 1px solid #2563eb;
-    color: #2563eb;
+    border: 1px solid #6578df;
+    color: #6578df;
     background-color: transparent;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -379,7 +382,7 @@ html {
     background-color: #f9fafb; /* gray-50 */
     padding: 1rem;
     border-radius: 0.5rem;
-    border-left: 4px solid #2563eb; /* blue-600 */
+    border-left: 4px solid #6578df; /* blue-600 */
   }
 
   .formation-etab {
@@ -400,6 +403,10 @@ html {
 .competences {
     padding: 5rem 1.5rem;
     background-color: #131d51; /* gray-50 */
+  }
+
+  .icone .fas {
+    color: #6578df;
   }
 
   .competences-conteneur {
@@ -494,7 +501,7 @@ html {
   }
 
   .carte-projet {
-    background-color: #f9fafb; /* gray-50 */
+    background-color: #b8c2f8; /* gray-50 */
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -548,7 +555,7 @@ html {
   }
 
   .carte-lien {
-    color: #2563eb;
+    color: #4d5ebe;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -622,7 +629,7 @@ html {
   }
 
   .contact-info {
-    background-color: #2563eb; /* blue-600 */
+    background-color: #6578df; /* blue-600 */
     color: white;
     padding: 2rem;
     flex: 1;
@@ -711,7 +718,7 @@ html {
 
   .form-bouton {
     width: 100%;
-    background-color: #2563eb;
+    background-color: #6578df;
     color: white;
     padding: 0.75rem;
     border: none;
