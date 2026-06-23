@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Zoubida BENHABIB</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>tailwind.config={theme:{extend:{colors:{primary:'#0066FF',secondary:'#121212'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#6366F1',primaryDark:'#4F46E5',accent:'#22D3EE',secondary:'#0E0E13'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'10px'}}}}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -19,11 +19,13 @@
             <div class="flex justify-between items-center">
                 <a href="#accueil" class="text-2xl font-bold text-white mono">Portfolio de <span class="text-primary">Zoubida</span></a>
                 
-                <nav class="hidden md:flex space-x-8">
+                <nav class="hidden md:flex space-x-6 text-sm lg:text-base">
                     <a href="#accueil" class="nav-link text-white hover:text-primary transition-colors">Accueil</a>
-                    <a href="#a-propos" class="nav-link text-white hover:text-primary transition-colors">À propos</a>
+                    <a href="#a-propos" class="nav-link text-white hover:text-primary transition-colors">Parcours</a>
                     <a href="#competences" class="nav-link text-white hover:text-primary transition-colors">Compétences</a>
                     <a href="#projets" class="nav-link text-white hover:text-primary transition-colors">Projets</a>
+                    <a href="#experiences" class="nav-link text-white hover:text-primary transition-colors">Expériences</a>
+                    <a href="#objectifs" class="nav-link text-white hover:text-primary transition-colors">Objectifs</a>
                     <a href="#contact" class="nav-link text-white hover:text-primary transition-colors">Contact</a>
                 </nav>
                 
@@ -46,22 +48,25 @@
         </div>
         <nav class="flex flex-col space-y-6">
             <a href="#accueil" class="mobile-nav-link text-white hover:text-primary transition-colors">Accueil</a>
-            <a href="#a-propos" class="mobile-nav-link text-white hover:text-primary transition-colors">À propos</a>
+            <a href="#a-propos" class="mobile-nav-link text-white hover:text-primary transition-colors">Parcours</a>
             <a href="#competences" class="mobile-nav-link text-white hover:text-primary transition-colors">Compétences</a>
             <a href="#projets" class="mobile-nav-link text-white hover:text-primary transition-colors">Projets</a>
+            <a href="#experiences" class="mobile-nav-link text-white hover:text-primary transition-colors">Expériences</a>
+            <a href="#objectifs" class="mobile-nav-link text-white hover:text-primary transition-colors">Objectifs</a>
             <a href="#contact" class="mobile-nav-link text-white hover:text-primary transition-colors">Contact</a>
         </nav>
     </div>
     
     <main>
         <section id="accueil" class="min-h-screen flex items-center relative overflow-hidden pt-20">
+            <div class="glow-orb glow-orb--primary" style="top:-10%;left:-5%;"></div>
+            <div class="glow-orb glow-orb--accent" style="bottom:-15%;right:-5%;"></div>
             <div class="particles"></div>
             <div class="container mx-auto px-6 py-12 relative z-10">
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 animate-on-scroll">
-                        <h1 class="text-4xl md:text-6xl font-bold mb-4 ">
-                            <span class="text-white">Bonjour, je suis</span>
-                            <span class="text-primary block mt-2">Zoubida BENHABIB</span>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 animate-on-scroll">    
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                            <span class="gradient-text block mt-2">Zoubida BENHABIB</span>
                         </h1>
                         <p class="text-xl md:text-2xl text-gray-300 mb-8">Étudiante en <span class="text-primary font-semibold">Informatique</span></p>
                         <div class="flex flex-wrap gap-3 mb-8">
@@ -69,10 +74,15 @@
                             <span class="skill-tag px-3 py-1 rounded-full text-sm">Réseaux</span>
                             <span class="skill-tag px-3 py-1 rounded-full text-sm">Analyse</span>
                         </div>
-                        <a href="#a-propos" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-primary/20 whitespace-nowrap">
-                            En savoir plus
-                            <i class="ri-arrow-right-line ml-2"></i>
-                        </a>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#projets" class="btn-gradient inline-block text-white px-6 py-3 rounded-button font-medium whitespace-nowrap">
+                                Voir mes projets
+                                <i class="ri-arrow-right-line ml-2"></i>
+                            </a>
+                            <a href="#contact" class="inline-block bg-white/5 border border-white/10 text-white px-6 py-3 rounded-button font-medium hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+                                Me contacter
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,9 +94,11 @@
                 
                 <div class="flex flex-col md:flex-row gap-12 items-center">
                     <div class="md:w-2/5 animate-on-scroll">
-                        <div class="relative">
+                        <div class="relative max-w-md mx-auto">
                             <div class="absolute inset-0 border-2 border-primary rounded-lg transform rotate-3"></div>
-                            <img src="" alt="Photo Zoubida" class="relative z-10 rounded-lg object-cover w-full max-w-md mx-auto shadow-xl">
+                            <div class="about-portrait relative z-10 rounded-lg shadow-xl flex items-center justify-center">
+                                <span class="mono text-7xl font-bold gradient-text">ZB</span>
+                            </div>
                         </div>
                     </div>
                     
@@ -130,13 +142,97 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ===== Présentation personnelle : sous-parties (consigne 1) ===== -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
+
+                    <!-- 1.1 Logique du parcours & choix d'orientation -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-route-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">La logique de mon parcours</h3>
+                        <p class="text-gray-300 mb-4">
+                            Je n'ai jamais considéré ma première année de double licence Biologie-Informatique comme une perte de temps ou un retard par rapport aux autres, grâce à cette année j'ai pu découvrir mon attrait pour l'informatique et vraiment vouloir m'orienter seulement dedans. Ce pourquoi j'ai intégré la première année du BUT, même en ayant validé la première année, attirée par la dimension pratique plus que théorique de la formation je me suis naturellement orienté vers la BUT. Mon stage de BUT2 a confirmé cette orientation : il m'a permis de découvrir le métier de l'intérieur et d'affiner mes choix pour la suite de mon cursus.
+                        </p>
+                    </div>
+
+                    <!-- 1.2 Projet professionnel -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-focus-3-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Mon projet professionnel</h3>
+                        <p class="text-gray-300 mb-4">
+                            Je m'oriente vers le <span class="text-primary font-medium">développement logiciel</span> et la <span class="text-primary font-medium">cybersécurité</span>, deux domaines où je peux conjuguer rigueur, résolution de problèmes et créativité. Mon stage m'a montré que ce qui me motive le plus, c'est de construire des outils concrets qui répondent à un vrai besoin (suivi bancaire automatisé, site vitrine, automatisation WhatsApp). À court terme, je cherche un stage ou une alternance de BUT 3 en développement ; à plus long terme, j'aimerais exercer un métier mêlant conception d'applications et sécurité des systèmes.
+                        </p>
+                    </div>
+
+                    <!-- 1.3 Qualités personnelles illustrées -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-sparkling-2-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Mes qualités personnelles</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex gap-3"><i class="ri-check-line text-primary mt-1"></i><span><span class="font-medium text-white">Curiosité &amp; autonomie</span> — illustrées par mes projets personnels (jeux, dessin, montage vidéo) menés en parallèle des cours.</span></li>
+                            <li class="flex gap-3"><i class="ri-check-line text-primary mt-1"></i><span><span class="font-medium text-white">Persévérance</span> — démontrée lors des SAE où j'ai dû résoudre des problèmes complexes (ex. jeu d'échecs en Java).</span></li>
+                            <li class="flex gap-3"><i class="ri-check-line text-primary mt-1"></i><span><span class="font-medium text-white">Travail d'équipe</span> — mise en pratique sur les projets de groupe (ex. site vitrine S2.06).</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 1.4 Conclusion BUT1 -> BUT2 -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-line-chart-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Mon évolution : du BUT 1 au BUT 2</h3>
+                        <p class="text-gray-300 mb-4">
+                            Entre 2024 et 2026, je suis passée de l'acquisition des bases (algorithmique, premières SAE) à une véritable mise en situation professionnelle. En BUT 2, le projet Mnémosyne m'a fait monter en compétences sur le développement back-end (PHP, base de données, architecture MVC) et le travail en équipe sur un dépôt Git partagé, et mon stage m'a apporté de la méthode (découpage des tâches, suivi sur Trello, tests unitaires) ainsi que de l'autonomie face à des technologies inconnues. Mes points forts identifiés : la résolution de problèmes et la capacité à apprendre vite. Ces acquis constituent une base solide pour aborder le BUT 3.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== Langues & centres d'intérêt ===== -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+
+                    <!-- Langues -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-translate-2 ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Langues</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-white">Français</span>
+                                <span class="text-primary">Langue maternelle</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-white">Arabe</span>
+                                <span class="text-primary">Courant (langue parlée en famille)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium text-white">Anglais</span>
+                                <span class="text-primary">Intermédiaire</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Centres d'intérêt -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-heart-3-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Centres d'intérêt</h3>
+                        <p class="text-gray-300 mb-4">
+                            En dehors de l'informatique, j'aime les activités créatives et manuelles : elles nourrissent ma curiosité et m'apportent la même satisfaction que le code, celle de voir un résultat concret prendre forme.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag px-3 py-1 rounded-full text-sm"><i class="ri-brush-line mr-1"></i>Illustration / Dessin</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-sm"><i class="ri-camera-line mr-1"></i>Photographie</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-sm"><i class="ri-film-line mr-1"></i>Montage vidéo</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-sm"><i class="ri-run-line mr-1"></i>Sport</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
+
         <section id="competences" class="py-20 bg-[#121212]">
             <div class="container mx-auto px-6">
-                <h2 class="section-title text-3xl font-bold mb-12 inline-block">Mes compétences</h2>
-                
+                <h2 class="section-title text-3xl font-bold mb-6 inline-block">Bilan de compétences</h2>
+                <p class="text-gray-300 max-w-3xl mb-12 animate-on-scroll">
+                    Synthèse de mes acquis issus des SAE du BUT Informatique et de mon stage. Plutôt que de présenter une liste de compétences hors-sol, chaque niveau ci-dessous s'appuie sur des projets concrets qui en sont la preuve : <span class="text-white">Python</span> sur les SAE d'analyse de réseaux d'amis et l'exercice d'API Pokémon, <span class="text-white">Java</span> sur le jeu d'échecs, <span class="text-white">SQL / bases de données</span> sur le site e-commerce et le projet Mnémosyne, <span class="text-white">HTML / CSS / JavaScript</span> sur les sites vitrines et le site de l'association, et <span class="text-white">Git, Linux et le travail d'équipe</span> tout au long du cursus et en entreprise.
+                </p>
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="bg-[#1A1A1A] p-6 rounded-lg border border-gray-800 animate-on-scroll">
                         <h3 class="text-xl font-semibold mb-6 flex items-center">
@@ -379,15 +475,75 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ===== Tableaux de synthèse Projet S3 & S4 (consigne 2) ===== -->
+                <div class="mt-20">
+                    <h3 class="text-2xl font-bold mb-3">Synthèse de mes projets BUT 2</h3>
+                    <p class="text-gray-400 max-w-3xl mb-10">Pour chaque projet, voici les objectifs, mes tâches individuelles, les compétences acquises, les preuves associées et les pistes d'amélioration.</p>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                        <!-- Projet S3 -->
+                        <div class="content-card !p-0 overflow-hidden animate-on-scroll">
+                            <div class="synthese-head">
+                                <span class="badge-s">S3</span>
+                                <h4 class="text-lg font-semibold">Projet S3 — <span class="text-gray-400 font-normal">Mnémosyne (conception)</span></h4>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="synthese-table">
+                                    <tbody>
+                                        <tr><th>Objectifs</th><td>Concevoir une application web pour l'IUT permettant de visualiser et suivre la progression des étudiants dans les parcours du BUT (BUT1 → BUT2 → BUT3 → diplomation) et d'analyser la validation des compétences.</td></tr>
+                                        <tr><th>Tâches principales (individuelles)</th><td>Partie back-end : conception du schéma de la base de données, écriture des modèles d'accès aux données en PHP (PDO) et des requêtes SQL, mise en place de l'architecture MVC.</td></tr>
+                                        <tr><th>Tâches secondaires</th><td>Import des données ScoDoc, tests des requêtes, rédaction de la documentation technique et intégration avec le travail des autres membres du groupe.</td></tr>
+                                        <tr><th>Compétences techniques</th><td>Modélisation de données relationnelles, PHP / PDO, SQL (MySQL/MariaDB), architecture MVC, requêtes préparées contre les injections SQL.</td></tr>
+                                        <tr><th>Compétences transversales</th><td>Travail d'équipe sur un dépôt Git partagé, organisation et découpage des tâches, communication entre les pôles back-end et front-end.</td></tr>
+                                        <tr><th>Preuves de compétences</th><td>Dépôt GitHub du projet (code back-end, schéma <code>mnemosyne-projet_bdd.sql</code>), application fonctionnelle de suivi de cohortes.</td></tr>
+                                        <tr><th>Pistes d'amélioration</th><td>Mieux structurer les requêtes dès le départ et anticiper la sécurité (CSRF, hachage) plutôt que de la rajouter en S4.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Projet S4 -->
+                        <div class="content-card !p-0 overflow-hidden animate-on-scroll">
+                            <div class="synthese-head">
+                                <span class="badge-s">S4</span>
+                                <h4 class="text-lg font-semibold">Projet S4 — <span class="text-gray-400 font-normal">Mnémosyne (amélioration)</span></h4>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="synthese-table">
+                                    <tbody>
+                                        <tr><th>Objectifs</th><td>Reprendre et améliorer l'application Mnémosyne du S3 : enrichir les visualisations, fiabiliser l'import des données et renforcer la sécurité de l'administration.</td></tr>
+                                        <tr><th>Tâches principales (individuelles)</th><td>Développement des API JSON alimentant les diagrammes de Sankey et l'analyse de compétences (séparation « sans dette » / « en dette »), optimisation des requêtes SQL et de l'accès aux données.</td></tr>
+                                        <tr><th>Tâches secondaires</th><td>Import et normalisation des fichiers ScoDoc (correction automatique des variantes de noms), exports PDF/JSON, participation à la mise en place de la protection CSRF et du hachage des mots de passe.</td></tr>
+                                        <tr><th>Compétences techniques</th><td>Conception d'API JSON, optimisation SQL, sécurité applicative (CSRF, bcrypt, régénération de session), filtrage avancé des données (par formation, promotion, statut).</td></tr>
+                                        <tr><th>Compétences transversales</th><td>Reprise d'une base de code existante, autonomie, esprit critique sur les choix techniques, restitution claire des résultats via les visualisations.</td></tr>
+                                        <tr><th>Preuves de compétences</th><td>Dépôt GitHub <code>SAE-S4-Mnemosyne/mnemosyne-saturne3</code> : diagrammes de Sankey, filtres, exports PDF/JSON et import sécurisé ScoDoc.</td></tr>
+                                        <tr><th>Pistes d'amélioration</th><td>Mettre en place des tests automatisés et passer une partie du back-end vers un framework pour faciliter la maintenance.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Perspectives de progression -->
+                    <div class="content-card mt-8 animate-on-scroll">
+                        <div class="card-icon"><i class="ri-seedling-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Perspectives de progression</h3>
+                        <p class="text-gray-300">
+                            Points que je souhaite consolider d'ici la fin du BUT : approfondir le développement (frameworks back-end, tests automatisés que j'ai découverts en stage), renforcer mes bases en cybersécurité, et gagner en aisance sur l'intégration d'API externes. Ces axes guideront mes choix de projets et mon stage de BUT 3.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-        
+
         <section id="projets" class="py-20 bg-[#151515]">
             <div class="container mx-auto px-6">
                 <h2 class="section-title text-3xl font-bold mb-12 inline-block">Mes projets</h2>
                 
                 <div class="mb-8 flex flex-wrap gap-3 justify-center">
-                    <button class="project-filter active px-4 py-2 rounded-full bg-primary text-white hover:bg-blue-600 transition-colors whitespace-nowrap !rounded-button" data-filter="all">Tous</button>
+                    <button class="project-filter active px-4 py-2 rounded-full bg-primary text-white hover:bg-primaryDark transition-colors whitespace-nowrap !rounded-button" data-filter="all">Tous</button>
                     <button class="project-filter px-4 py-2 rounded-full bg-[#1A1A1A] text-white hover:bg-[#252525] transition-colors whitespace-nowrap !rounded-button" data-filter="web">Web</button>
                     <button class="project-filter px-4 py-2 rounded-full bg-[#1A1A1A] text-white hover:bg-[#252525] transition-colors whitespace-nowrap !rounded-button" data-filter="algo">Algorithme/App</button>
                     <button class="project-filter px-4 py-2 rounded-full bg-[#1A1A1A] text-white hover:bg-[#252525] transition-colors whitespace-nowrap !rounded-button" data-filter="reseau">Réseaux</button>
@@ -396,6 +552,35 @@
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="project-card bg-[#1A1A1A] rounded-lg overflow-hidden border border-gray-800 animate-on-scroll" data-category="algo">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="images/mnemosyne.png" alt="Mnémosyne - suivi de cohortes" class="w-full h-full object-cover object-top">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] to-transparent"></div>
+                    <div class="absolute top-3 right-3 bg-primary/90 text-white text-xs px-2 py-1 rounded-full">Application</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">S3 / S4 - Mnémosyne (suivi de cohortes)</h3>
+                    <p class="text-gray-400 mb-4">Application web de visualisation et de suivi de la progression des étudiants dans les parcours du BUT, développée en équipe puis améliorée en S4.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">PHP</span>
+                        <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">MySQL</span>
+                        <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">CSS</span>
+                        <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">MVC</span>
+                    </div>
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span>Projet de groupe (SAE S3 puis S4, groupe Saturne) pour l'IUT de Villetaneuse : suivre la progression des étudiants à travers les années de BUT et analyser la validation des compétences, avec des diagrammes de Sankey et des exports pour l'administration.</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span>J'étais sur la partie back-end : conception de la base de données, modèles d'accès aux données en PHP (PDO), requêtes SQL, architecture MVC, API JSON pour les visualisations et import/normalisation des fichiers ScoDoc.</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> Réparti sur les semestres 3 et 4 (le projet S4 reprend et améliore celui du S3).</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> Le développement back-end PHP, la modélisation et l'optimisation de bases de données, la sécurité applicative (requêtes préparées, CSRF, hachage) et le travail d'équipe sur un dépôt Git partagé.</p>
+                    </div>
+                    <a href="https://github.com/SAE-S4-Mnemosyne/mnemosyne-saturne3" target="_blank" class="inline-block text-primary hover:text-accent transition-colors font-medium">
+                        Voir le projet
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
             <div class="project-card bg-[#1A1A1A] rounded-lg overflow-hidden border border-gray-800 animate-on-scroll" data-category="web">
                 <div class="relative h-48 overflow-hidden">
                     <img src="images/e_commerce.png" alt="Site e-commerce" class="w-full h-full object-cover object-top">
@@ -412,7 +597,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">PHP</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">SQL</span>
                     </div>
-                    <a href="https://github.com/zbd6/projet2024" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span>Projet universitaire qui consistait à faire un site de vente de A à Z (allant du front au back), en passant par une interface utilisateur ergonomique mais également par une base de donnée des produits, un travail en binôme</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span>J'ai conceptualisé une base de données présentant les produits, utilisable sur le site avec du sql et phpmyadmin, j'ai aussi mis en place l'espace de travail avec docker (pour le site et phpmyadmin)</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> réparties sur 2 mois</p>
+                        
+                    </div>
+                    <a href="https://github.com/zbd6/projet2024" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -421,18 +612,24 @@
 
             <div class="project-card bg-[#1A1A1A] rounded-lg overflow-hidden border border-gray-800 animate-on-scroll" data-category="algo">
                 <div class="relative h-48 overflow-hidden">
-                    <img src="images/reseau.png" alt="Réseau d’amis" class="w-full h-full object-cover object-top">
+                    <img src="images/reseau.png" alt="Réseau d'amis" class="w-full h-full object-cover object-top">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] to-transparent"></div>
                     <div class="absolute top-3 right-3 bg-primary/90 text-white text-xs px-2 py-1 rounded-full">Algortihme</div>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">S1.01 - Réseau d’amis</h3>
-                    <p class="text-gray-400 mb-4">Analyse de graphes représentant un réseau d’amis, avec exploration de relations et suggestions d’amis.</p>
+                    <h3 class="text-xl font-semibold mb-2">S1.01 - Réseau d'amis</h3>
+                    <p class="text-gray-400 mb-4">Analyse de graphes représentant un réseau d'amis, avec exploration de relations et suggestions d'amis.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Python</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Jupyter Notebook</span>
                     </div>
-                    <a href="reseau.zip" download class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span>décrire le contexte et l'objectif du projet</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> réalisations personnelles : fonctionnalités, code, analyses, modélisation...</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> réparties sur ...</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> Compétences techniques grâce au projet</p>
+                    </div>
+                    <a href="reseau.zip" download class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -453,7 +650,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">CSS</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">JavaScript</span>
                     </div>
-                    <a href="https://github.com/zbd6/chaosmos" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="https://github.com/zbd6/chaosmos" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -472,7 +675,13 @@
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Java</span>
                     </div>
-                    <a href="https://github.com/zbd6/jeu_echec" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="https://github.com/zbd6/jeu_echec" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -493,7 +702,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">matplotlib</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Jupyter Notebook</span>
                     </div>
-                    <a href="SAE_algo2.zip" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="SAE_algo2.zip" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -513,7 +728,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">SQL</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">PostgreSQL</span>
                     </div>
-                    <a href="sae_bd.pdf" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="sae_bd.pdf" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -534,7 +755,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Linux</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Shell</span>
                     </div>
-                    <a href="#" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="#" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -556,7 +783,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Données</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Rapport</span>
                     </div>
-                    <a href="sae_recueil.pdf" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="sae_recueil.pdf" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -576,7 +809,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Word</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Recherches documentaires</span>
                     </div>
-                    <a href="eco.pdf" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="eco.pdf" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -597,7 +836,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Apache</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">DHCP</span>
                     </div>
-                    <a href="#" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="#" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -618,7 +863,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">MySQL</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">PostgreSQL</span>
                     </div>
-                    <a href="SAE.zip" download class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="SAE.zip" download class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -639,7 +890,13 @@
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Diagrammes de Gantt</span>
                         <span class="bg-[#252525] text-xs px-2 py-1 rounded-full">Planification</span>
                     </div>
-                    <a href="sae_gestion.pdf" class="inline-block text-primary hover:text-blue-400 transition-colors font-medium">
+                    <div class="project-details hidden">
+                        <p class="detail-block"><span class="detail-label">Contexte &amp; objectif</span> [Décris le contexte et l'objectif du projet.]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai réalisé concrètement</span> [Tes réalisations personnelles : fonctionnalités, code, analyses, modélisation…]</p>
+                        <p class="detail-block"><span class="detail-label">Temps de travail estimé</span> [ex. ~30 h réparties sur 4 semaines]</p>
+                        <p class="detail-block"><span class="detail-label">Ce que j'ai appris</span> [Compétences techniques et transversales acquises grâce à ce projet.]</p>
+                    </div>
+                    <a href="sae_gestion.pdf" class="inline-block text-primary hover:text-accent transition-colors font-medium">
                         Voir le projet
                         <i class="ri-arrow-right-line ml-1"></i>
                     </a>
@@ -649,14 +906,165 @@
 
                 <div class="mt-12 text-center animate-on-scroll">
                     <p class="text-gray-400 mb-6">Vous souhaitez voir plus de projets ou collaborer sur un projet ?</p>
-                    <a href="https://github.com/zbd6" target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-primary/20 whitespace-nowrap">
+                    <a href="https://github.com/zbd6" target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primaryDark transition-colors shadow-lg shadow-primary/20 whitespace-nowrap">
                         <i class="ri-github-fill mr-2"></i>
                         Voir mon GitHub
                     </a>
                 </div>
             </div>
         </section>
-        
+
+        <!-- ===== Expériences professionnelles ===== -->
+        <section id="experiences" class="py-20 bg-[#121212]">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold mb-6 inline-block">Expériences professionnelles</h2>
+                <p class="text-gray-300 max-w-3xl mb-12 animate-on-scroll">
+                    Mes expériences en dehors des cours : mon stage de BUT 2 chez VifAuto et mon engagement bénévole auprès de l'association Ambition Jeunesse Creilloise, que j'ai rejointe après avoir réalisé leur site web.
+                </p>
+
+                <!-- Vue d'ensemble : 2 expériences -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                    <!-- Expérience 1 : Stage VifAuto -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-briefcase-4-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-1">Stagiaire développement — VifAuto</h3>
+                        <p class="text-sm text-gray-400 mb-4 mono">VifAuto (SAS) · 26 janv. – 20 mars 2026 · Montataire / Persan (60)</p>
+                        <p class="text-gray-300">
+                            Stage de 8 semaines dans une entreprise de vente de pièces automobiles qui développe aussi ses propres outils numériques. J'y ai mené trois missions de développement (suivi bancaire par open banking, site vitrine, automatisation WhatsApp), en alternant présentiel et télétravail, avec un bon équilibre entre autonomie et accompagnement de mon maître de stage.
+                        </p>
+                    </div>
+
+                    <!-- Expérience 2 : Association AJC -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-community-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-1">Bénévole — Ambition Jeunesse Creilloise</h3>
+                        <p class="text-sm text-gray-400 mb-4 mono">Association loi 1901 · Depuis 2026 · Creil (60)</p>
+                        <p class="text-gray-300">
+                            Après avoir conçu le site vitrine de l'association lors de mon stage, j'ai souhaité m'investir dans ses actions. L'AJC accompagne les jeunes de Creil dans leur réussite scolaire (aide aux devoirs, accompagnement Parcoursup, préparation aux examens comme le baccalauréat). J'y mets à profit mon parcours pour aider et orienter les collégiens et lycéens.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zoom sur le stage -->
+                <h3 class="text-2xl font-bold mb-3">Zoom sur mon stage chez VifAuto</h3>
+                <p class="text-gray-400 max-w-3xl mb-10 animate-on-scroll">
+                    VifAuto est une SAS dirigée par deux frères, spécialisée dans la vente de pièces automobiles, qui développe en parallèle des outils informatiques pour ses propres besoins. Mon fil conducteur tout au long du stage : <span class="text-white">mener à bien des tâches confiées même lorsque certaines compétences ne sont pas encore maîtrisées</span>, en prenant le temps de comprendre chaque nouvelle notion avant d'avancer.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <!-- Mission 1 -->
+                    <div class="content-card animate-on-scroll">
+                        <span class="goal-tag">Mission 1</span>
+                        <div class="card-icon mt-4"><i class="ri-bank-line ri-lg"></i></div>
+                        <h4 class="text-lg font-semibold mb-3">Suivi bancaire par open banking</h4>
+                        <p class="text-gray-300 mb-3">
+                            Mise en place d'un système de récupération automatique des transactions bancaires (projet de logiciel SaaS pour garagistes). J'ai d'abord découvert les API avec Postman et un exercice en Python sur l'API Pokémon, puis appris Node.js. La solution prévue (Nordigen) n'étant plus disponible après son rachat, j'ai dû rechercher et comparer d'autres fournisseurs d'open banking.
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            <span class="text-white">Réalisé :</span> back-end Node.js structuré en routes / services / repos et tests unitaires (Jest), 23 tests validés.
+                        </p>
+                    </div>
+
+                    <!-- Mission 2 -->
+                    <div class="content-card animate-on-scroll">
+                        <span class="goal-tag">Mission 2</span>
+                        <div class="card-icon mt-4"><i class="ri-global-line ri-lg"></i></div>
+                        <h4 class="text-lg font-semibold mb-3">Site vitrine pour l'AJC</h4>
+                        <p class="text-gray-300 mb-3">
+                            Conception d'un site vitrine responsive (5 pages) pour l'association Ambition Jeunesse Creilloise, en HTML, CSS et JavaScript. J'ai géré la mise en ligne sur le serveur de l'entreprise puis travaillé le référencement.
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            <span class="text-white">Réalisé :</span> SEO (indexation Google, sitemap.xml, Search Console, favicon) et optimisation des images. Site en ligne : ambitionjeunessecreilloise.arggon.fr
+                        </p>
+                    </div>
+
+                    <!-- Mission 3 -->
+                    <div class="content-card animate-on-scroll">
+                        <span class="goal-tag">Mission 3</span>
+                        <div class="card-icon mt-4"><i class="ri-whatsapp-line ri-lg"></i></div>
+                        <h4 class="text-lg font-semibold mb-3">Automatisation WhatsApp (cheffe de projet)</h4>
+                        <p class="text-gray-300 mb-3">
+                            Application d'automatisation des conversations WhatsApp via l'API WhatsApp Business, pour améliorer la réactivité auprès des clients. Désignée cheffe de projet, j'ai organisé le travail d'une équipe de trois stagiaires et géré la logique métier (traitement des messages).
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            <span class="text-white">Réalisé :</span> configuration de l'environnement Meta Developers (tokens, webhook, ngrok), coordination de l'équipe sur GitHub, back-end en routes / services.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Lien avec 2 compétences du BUT -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-links-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Lien avec 2 compétences du BUT</h3>
+
+                        <div class="comp-link">
+                            <h4 class="font-semibold text-primary mb-1">Réaliser un développement d'application</h4>
+                            <p class="text-gray-300 mb-1"><span class="text-white font-medium">Mise en pratique :</span> développement du back-end des applications (open banking et WhatsApp) en Node.js, avec une architecture séparant routes, services et accès aux données, comme vu en cours côté back-end.</p>
+                            <p class="text-gray-400 text-sm"><span class="text-white">Outils &amp; preuves :</span> Node.js, dépôt Git, tests unitaires écrits avec Jest (fichier routes.test.js) — 23 tests au vert lors du lancement de la suite.</p>
+                        </div>
+
+                        <div class="comp-link mt-5">
+                            <h4 class="font-semibold text-primary mb-1">Conduire un projet en équipe</h4>
+                            <p class="text-gray-300 mb-1"><span class="text-white font-medium">Regard critique :</span> en tant que cheffe de projet sur l'application WhatsApp, j'ai réparti les tâches et veillé à la cohérence de l'ensemble. La principale difficulté a été de coordonner des jours de présence variables, compensée par une organisation flexible et beaucoup d'échanges directs.</p>
+                            <p class="text-gray-400 text-sm"><span class="text-white">Outils &amp; preuves :</span> suivi des tâches sur Trello, centralisation du code sur GitHub, répartition back-end / front-end (Svelte) / logique métier.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ce que le stage m'a appris du monde pro -->
+                    <div class="content-card animate-on-scroll">
+                        <div class="card-icon"><i class="ri-lightbulb-flash-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-4">Ce que j'ai découvert du monde professionnel</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex gap-3"><i class="ri-arrow-right-s-line text-primary mt-1"></i><span><span class="text-white font-medium">Méthode de travail :</span> définir un « plan d'attaque » évolutif, découper une tâche en étapes et avancer progressivement plutôt que tout faire d'un coup.</span></li>
+                            <li class="flex gap-3"><i class="ri-arrow-right-s-line text-primary mt-1"></i><span><span class="text-white font-medium">Séparation pro / perso :</span> contrairement à l'école, une fois la journée terminée le travail s'arrête — une vraie découverte de l'équilibre de vie en entreprise.</span></li>
+                            <li class="flex gap-3"><i class="ri-arrow-right-s-line text-primary mt-1"></i><span><span class="text-white font-medium">Suivi &amp; entraide :</span> dans une petite équipe, le contact direct avec mon maître de stage permettait de débloquer rapidement les difficultés, même en télétravail.</span></li>
+                            <li class="flex gap-3"><i class="ri-arrow-right-s-line text-primary mt-1"></i><span><span class="text-white font-medium">Initiative :</span> contacter par mail ou en réunion des fournisseurs de solutions techniques et comparer leurs offres (fonctionnalités, coût, accessibilité).</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Objectifs (consigne 4) ===== -->
+        <section id="objectifs" class="py-20 bg-[#151515]">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold mb-12 inline-block">Mes objectifs</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Court terme -->
+                    <div class="content-card animate-on-scroll">
+                        <span class="goal-tag">Court terme</span>
+                        <div class="card-icon mt-4"><i class="ri-flag-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">Stage / alternance de BUT 3</h3>
+                        <p class="text-gray-300">
+                            Décrocher un stage (ou une alternance) en lien avec le développement ou la cybersécurité, et mettre en place un plan d'action immédiat : mise à jour du CV, candidatures ciblées, projets personnels pour renforcer mon profil.
+                        </p>
+                    </div>
+
+                    <!-- Moyen terme -->
+                    <div class="content-card animate-on-scroll">
+                        <span class="goal-tag">Moyen terme</span>
+                        <div class="card-icon mt-4"><i class="ri-graduation-cap-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">Formation post-BUT &amp; 1ᵉʳ emploi</h3>
+                        <p class="text-gray-300">
+                            Poursuivre vers une formation qui me permette de me spécialiser en développement et en sécurité informatique (licence professionnelle, école d'ingénieur ou master), puis accéder à un premier poste de développeuse qui me permette de monter en compétences.
+                        </p>
+                    </div>
+
+                    <!-- Long terme -->
+                    <div class="content-card animate-on-scroll">
+                        <span class="goal-tag">Long terme</span>
+                        <div class="card-icon mt-4"><i class="ri-rocket-2-line ri-lg"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">Mon métier dans 10-15 ans</h3>
+                        <p class="text-gray-300">
+                            À terme, exercer un métier d'expertise mêlant conception logicielle et sécurité des systèmes, avec des responsabilités techniques, voire encadrer une équipe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="py-20 bg-[#121212] relative">
             <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div class="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-primary/5 to-transparent"></div>
@@ -664,40 +1072,7 @@
             </div>
             
             <div class="container mx-auto px-6 relative z-10">
-                <h2 class="section-title text-3xl font-bold mb-12 inline-block">Me contacter</h2>
-                
-                <div class="flex flex-col lg:flex-row gap-12">
-                    <div class="lg:w-1/2 animate-on-scroll">
-                        <div class="bg-[#1A1A1A] p-8 rounded-lg border border-gray-800 mb-8">
-                            <h3 class="text-xl font-semibold mb-6">Envoyez-moi un message</h3>
-                            <form id="contact-form">
-                                <div class="mb-6">
-                                    <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Nom</label>
-                                    <input type="text" id="name" class="custom-input w-full px-4 py-3 rounded-lg text-white border-none" placeholder="Votre nom">
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                                    <input type="email" id="email" class="custom-input w-full px-4 py-3 rounded-lg text-white border-none" placeholder="votre@email.com">
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <label for="subject" class="block text-sm font-medium text-gray-400 mb-2">Sujet</label>
-                                    <input type="text" id="subject" class="custom-input w-full px-4 py-3 rounded-lg text-white border-none" placeholder="Sujet de votre message">
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                                    <textarea id="message" rows="5" class="custom-input w-full px-4 py-3 rounded-lg text-white border-none resize-none" placeholder="Votre message..."></textarea>
-                                </div>
-                                
-                                <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-primary/20 whitespace-nowrap">
-                                    Envoyer
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    
+                <h2 class="section-title text-3xl font-bold mb-12 inline-block">Me contacter</h2>                    
                     <div class="lg:w-1/2 animate-on-scroll">
                         <div class="bg-[#1A1A1A] p-8 rounded-lg border border-gray-800 mb-8">
                             <h3 class="text-xl font-semibold mb-6">Informations de contact</h3>
@@ -775,7 +1150,7 @@
             </div>
             
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Zoubida BENHABIB. Tous droits réservés.</p>
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2026 Zoubida BENHABIB. Tous droits réservés.</p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Mentions légales</a>
                     <a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Politique de confidentialité</a>
@@ -783,187 +1158,30 @@
             </div>
         </div>
     </footer>
-    
-    <script id="navigation-script">
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const menuToggle = document.getElementById('menu-toggle');
-            const closeMenu = document.getElementById('close-menu');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            menuToggle.addEventListener('click', function() {
-                mobileMenu.classList.add('open');
-                menuToggle.classList.add('menu-open');
-            });
-            
-            closeMenu.addEventListener('click', function() {
-                mobileMenu.classList.remove('open');
-                menuToggle.classList.remove('menu-open');
-            });
-            
-            // Mobile nav links
-            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-            mobileNavLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('open');
-                    menuToggle.classList.remove('menu-open');
-                });
-            });
-            
-            // Header scroll effect
-            const header = document.querySelector('header');
-            let lastScrollY = window.scrollY;
-            
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 100) {
-                    header.classList.add('py-2', 'shadow-lg', 'shadow-black/20');
-                    header.classList.remove('py-4');
-                } else {
-                    header.classList.remove('py-2', 'shadow-lg', 'shadow-black/20');
-                    header.classList.add('py-4');
-                }
-                
-                lastScrollY = window.scrollY;
-            });
-            
-            // Active nav link
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            window.addEventListener('scroll', function() {
-                let current = '';
-                
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    
-                    if (window.scrollY >= (sectionTop - 200)) {
-                        current = section.getAttribute('id');
-                    }
-                });
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').substring(1) === current) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-        });
-    </script>
-    
-    <script id="animation-script">
-        document.addEventListener('DOMContentLoaded', function() {
-            // Scroll animation
-            const animateElements = document.querySelectorAll('.animate-on-scroll');
-            
-            const checkIfInView = () => {
-                animateElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementBottom = element.getBoundingClientRect().bottom;
-                    
-                    // Element is partially visible
-                    if (elementTop < window.innerHeight - 100 && elementBottom > 0) {
-                        element.classList.add('visible');
-                    }
-                });
-            };
-            
-            // Check on load
-            checkIfInView();
-            
-            // Check on scroll
-            window.addEventListener('scroll', checkIfInView);
-            
-            // Particles animation
-            const particlesContainer = document.querySelector('.particles');
-            const particleCount = 30;
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // Random size
-                const size = Math.random() * 5 + 1;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                
-                // Random position
-                const posX = Math.random() * 100;
-                const posY = Math.random() * 100;
-                particle.style.left = `${posX}%`;
-                particle.style.top = `${posY}%`;
-                
-                // Random animation
-                const duration = Math.random() * 20 + 10;
-                const delay = Math.random() * 5;
-                
-                particle.style.animation = `float ${duration}s ${delay}s infinite alternate ease-in-out`;
-                
-                particlesContainer.appendChild(particle);
-            }
-        });
-    </script>
-    
-    <script id="project-filter-script">
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.project-filter');
-            const projectCards = document.querySelectorAll('.project-card');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => {
-                        btn.classList.remove('active', 'bg-primary', 'text-white');
-                        btn.classList.add('bg-[#1A1A1A]');
-                    });
-                    
-                    // Add active class to clicked button
-                    button.classList.add('active', 'bg-primary', 'text-white');
-                    button.classList.remove('bg-[#1A1A1A]');
-                    
-                    const filter = button.getAttribute('data-filter');
-                    
-                    // Filter projects
-                    projectCards.forEach(card => {
-                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
-    
-    <script id="contact-form-script">
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contact-form');
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form values
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value;
-                
-                // Validate form
-                if (!name || !email || !subject || !message) {
-                    alert('Veuillez remplir tous les champs du formulaire.');
-                    return;
-                }
-                
-                // Here you would normally send the form data to a server
-                // For demo purposes, we'll just show a success message
-                alert('Merci pour votre message ! Je vous répondrai dès que possible.');
-                
-                // Reset form
-                contactForm.reset();
-            });
-        });
-    </script>
+
+    <!-- ===== Modale détails projet ===== -->
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+        <div class="project-modal__overlay" data-close></div>
+        <div class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="project-modal__close" data-close aria-label="Fermer">
+                <i class="ri-close-line ri-lg"></i>
+            </button>
+            <div class="project-modal__media">
+                <img id="modal-image" src="" alt="" class="w-full h-full object-cover object-top">
+                <span id="modal-badge" class="project-modal__badge"></span>
+            </div>
+            <div class="project-modal__content">
+                <h3 id="modal-title" class="text-2xl font-bold mb-3"></h3>
+                <p id="modal-desc" class="text-gray-300 mb-5"></p>
+                <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
+                <div id="modal-details" class="space-y-4"></div>
+                <a id="modal-link" href="#" class="btn-gradient inline-block text-white px-5 py-2.5 rounded-button font-medium mt-6 whitespace-nowrap">
+                    Voir le projet <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
